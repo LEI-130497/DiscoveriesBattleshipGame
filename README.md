@@ -16,3 +16,6 @@ Basic academic version of Battleship game to build upon.
 | [Carrack](https://en.wikipedia.org/wiki/Carrack) | 3 | 2 |
 | [Caravel](https://en.wikipedia.org/wiki/Caravel) | 2 | 3 |
 | [Barge](https://en.wikipedia.org/wiki/Barge) | 1 | 4 |
+
+# Game Rules
+Depois dos navios terem sido posicionados, cada jogador, à vez, “atira três tiros” sobre a frota advers´aria, referindo as respectivas coordenadas dos tiros (linha, coluna). O adversário deve referir o resultado dessa rajada de três tiros, informando se acertou em um ou mais navios e de que tipo, bem como os tiros na água! Cada jogador vai registando na grelha do oponente os resultados dos seus tiros, identificando os navios afundados. Ganha o jogo o primeiro que atingir todos os navios da frota adversária.
