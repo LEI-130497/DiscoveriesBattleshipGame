@@ -9,4 +9,4 @@ Basic academic version of Battleship game to build upon.
 | Maria Silva |  131635 | LEI-PL |
 
 # Game Rules
-Depois dos navios terem sido posicionados, cada jogador, à vez, “atira três tiros” sobre a frota advers´aria, referindo as respectivas coordenadas dos tiros (linha, coluna). O adversário deve referir o resultado dessa rajada de três tiros, informando se acertou em um ou mais navios e de que tipo, bem como os tiros na água! Cada jogador vai registando na grelha do oponente os resultados dos seus tiros, identificando os navios afundados. Ganha o jogo o primeiro que atingir todos os navios da frota adversária.
+After the ships have been positioned, each player, in turn, "fires three shots" at the opposing fleet, noting the respective coordinates of the shots (row, column). The opponent must state the result of this burst of three shots, indicating whether they hit one or more ships and of what type, as well as the shots that sank! Each player records the results of their shots on the opponent's grid, identifying the sunken ships. The first player to hit all the ships in the opposing fleet wins the game.
