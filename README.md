@@ -11,8 +11,8 @@ Basic academic version of Battleship game to build upon.
 # Ship Types
 | Type | Dimension | #Ships |
 |---|---:|---:|
-| Galleon | 5 | 1 |
-| Frigate | 4 | 1 |
-| Carrack | 3 | 2 |
-| Caravel | 2 | 3 |
-| Barge | 1 | 4 |
+| [Galleon](https://en.wikipedia.org/wiki/Galleon) | 5 | 1 | 
+| [Frigate](https://en.wikipedia.org/wiki/Frigate) | 4 | 1 |
+| [Carrack](https://en.wikipedia.org/wiki/Carrack) | 3 | 2 |
+| [Caravel](https://en.wikipedia.org/wiki/Caravel) | 2 | 3 |
+| [Barge](https://en.wikipedia.org/wiki/Barge) | 1 | 4 |
