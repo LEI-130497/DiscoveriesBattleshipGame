@@ -3,13 +3,21 @@
  */
 package iscteiul.ista.battleship;
 
+/**
+ * Represents the <a href="https://en.wikipedia.org/wiki/Caravel">Caravel</a> ship type, this
+ * class inherits the abstract class Ship
+ * @see Ship
+ */
 public class Caravel extends Ship {
     private static final Integer SIZE = 2;
     private static final String NAME = "Caravela";
 
     /**
+     *
      * @param bearing the bearing where the Caravel heads to
      * @param pos     initial point for positioning the Caravel
+     * @throws NullPointerException if {@code bearing} is {@code null}
+     * @throws IllegalArgumentException if {@code bearing} is {@link Compass#UNKNOWN}
      */
     public Caravel(Compass bearing, IPosition pos) throws NullPointerException, IllegalArgumentException {
         super(Caravel.NAME, bearing, pos);
