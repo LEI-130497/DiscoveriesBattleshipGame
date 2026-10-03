@@ -227,7 +227,6 @@ public abstract class Ship implements IShip {
     /**
      * Method to shoot and register if the shot hit the ship o one of its positions. 
      *
-     * @see battleship.IShip#shoot(battleship.IPosition)
      */
     @Override
     public void shoot(IPosition pos) {
