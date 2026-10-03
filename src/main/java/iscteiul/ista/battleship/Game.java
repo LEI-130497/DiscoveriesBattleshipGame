@@ -37,7 +37,6 @@ public class Game implements IGame {
      * 
      * @param pos
      *
-     * @see battleship.IGame#fire(battleship.IPosition)
      */
     @Override
     public IShip fire(IPosition pos) {
@@ -139,7 +138,8 @@ public class Game implements IGame {
      * This method serves to fire the board of the player in a position.
      * If a ship is completly destroyed, then it returns the ship, if not returns null.
      * 
-     * @param pos
+     * @param positions
+     * @param marker
      *
      */
     public void printBoard(List<IPosition> positions, Character marker) {
