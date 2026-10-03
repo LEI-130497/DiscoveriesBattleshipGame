@@ -2,8 +2,13 @@ name: Pull Request Notifier
 
 on:
   pull_request:
-    types:
-      - ready_for_review
+    types: [opened, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
 jobs:
   test:
     runs-on: ubuntu-latest  
@@ -14,6 +19,6 @@ jobs:
 
     steps:
       - name: Comment PR
-        run: gh pr comment ${{ github.event.pull_request.number }} --body "@${{ matrix.reviewer.login }} must review this pull request."
+        run: gh pr comment ${{ github.event.pull_request.number }} --repo "${{ github.repository }}" --body "@${{ matrix.reviewer.login }} must review this pull request."
         env:
           GH_TOKEN: ${{ github.token }}
