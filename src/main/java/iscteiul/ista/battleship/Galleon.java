@@ -1,15 +1,20 @@
-/**
- *
- */
+
 package iscteiul.ista.battleship;
+
+/**
+ * It represents a ship <a href="https://en.wikipedia.org/wiki/Galleon">Galleon</a>.
+ * This class inherits the abstract class ship.
+ * 
+ * @see Ship
+ */
 
 public class Galleon extends Ship {
     private static final Integer SIZE = 5;
     private static final String NAME = "Galeao";
 
     /**
-     * @param bearing
-     * @param pos
+     * @param bearing   - barge bearing
+     * @param pos       - upper left position of the barge
      */
     public Galleon(Compass bearing, IPosition pos) throws IllegalArgumentException {
         super(Galleon.NAME, bearing, pos);

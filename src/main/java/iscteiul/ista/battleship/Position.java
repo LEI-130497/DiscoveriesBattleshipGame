@@ -4,7 +4,13 @@
 package iscteiul.ista.battleship;
 
 import java.util.Objects;
-
+/**
+ * This class represents a position in the game board.
+ * It stores the row and the column.
+ * And also, it inherits the interface IPosition.
+ * 
+ * @see IPosition
+ */
 public class Position implements IPosition {
     private int row;
     private int column;
