@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * Represents the fleet in the game (a set of {@link Ship ships}, being able to hold a max of
- * {@value IFleet#FLEET_SIZE} ships
+ * {@link IFleet#FLEET_SIZE} ships
  */
 public class Fleet implements IFleet {
     /**
