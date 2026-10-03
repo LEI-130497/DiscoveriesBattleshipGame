@@ -3,7 +3,7 @@ name: Pull Request Notifier
 on:
   pull_request:
     types:
-      - ready_for_review
+      - opened
 jobs:
   test:
     runs-on: ubuntu-latest  
