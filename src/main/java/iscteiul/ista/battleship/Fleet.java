@@ -6,6 +6,10 @@ package iscteiul.ista.battleship;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Represents the fleet in the game (a set of {@link Ship ships}, being able to hold a max of
+ * {@link IFleet#FLEET_SIZE} ships
+ */
 public class Fleet implements IFleet {
     /**
      * This operation prints all the given ships
@@ -30,11 +34,10 @@ public class Fleet implements IFleet {
         return ships;
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see battleship.IFleet#addShip(battleship.IShip)
-     */
+    /**
+     * @param s The ship to be added
+     * @return {@code true} if the fleet have space left, {@code false} otherwise
+     **/
     @Override
     public boolean addShip(IShip s) {
         boolean result = false;
@@ -45,10 +48,10 @@ public class Fleet implements IFleet {
         return result;
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see battleship.IFleet#getShipsLike(java.lang.String)
+    /**
+     * Returns all ships belonging to the specified category.
+     * @param category The name of the ship category
+     * @return a list of ships belonging to {@code category}
      */
     @Override
     public List<IShip> getShipsLike(String category) {
@@ -75,10 +78,9 @@ public class Fleet implements IFleet {
         return floatingShips;
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see battleship.IFleet#shipAt(battleship.IPosition)
+    /**
+     * @param pos The position to check
+     * @return the ship that is occupying {@code pos}, {@code null} if there is none
      */
     @Override
     public IShip shipAt(IPosition pos) {

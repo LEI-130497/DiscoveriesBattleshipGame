@@ -1,15 +1,16 @@
-/**
- *
- */
+
 package iscteiul.ista.battleship;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author fba
- *
+ * This class stores information about the player game.
+ * It inherits the IGame interface.
+ * 
+ * @see IGame
  */
+
 public class Game implements IGame {
     private IFleet fleet;
     private List<IPosition> shots;
@@ -21,7 +22,7 @@ public class Game implements IGame {
 
 
     /**
-     * @param fleet
+     * @param fleet fleet responsible to store all the game's ships
      */
     public Game(IFleet fleet) {
         shots = new ArrayList<>();
@@ -30,10 +31,12 @@ public class Game implements IGame {
         this.fleet = fleet;
     }
 
-    /*
-     * (non-Javadoc)
+    /**
+     * This method serves to fire the board of the player in a position.
+     * If a ship is completly destroyed, then it returns the ship, if not returns null.
+     * 
+     * @param pos
      *
-     * @see battleship.IGame#fire(battleship.IPosition)
      */
     @Override
     public IShip fire(IPosition pos) {
@@ -131,7 +134,14 @@ public class Game implements IGame {
         return false;
     }
 
-
+    /**
+     * This method serves to fire the board of the player in a position.
+     * If a ship is completly destroyed, then it returns the ship, if not returns null.
+     * 
+     * @param positions
+     * @param marker
+     *
+     */
     public void printBoard(List<IPosition> positions, Character marker) {
         char[][] map = new char[Fleet.BOARD_SIZE][Fleet.BOARD_SIZE];
 

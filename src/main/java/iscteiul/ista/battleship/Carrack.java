@@ -3,13 +3,19 @@
  */
 package iscteiul.ista.battleship;
 
+/**
+ * Represents the <a href="https://en.wikipedia.org/wiki/Carrack">Carrack</a> ship type, this
+ * class inherits the abstract class Ship
+ * @see Ship
+ */
 public class Carrack extends Ship {
     private static final Integer SIZE = 3;
     private static final String NAME = "Nau";
 
     /**
-     * @param bearing
-     * @param pos
+     * @param bearing the bearing where the Carrack heads to
+     * @param pos     initial point for positioning the Carrack
+     * @throws IllegalArgumentException if {@code bearing} is {@link Compass#UNKNOWN}
      */
     public Carrack(Compass bearing, IPosition pos) throws IllegalArgumentException {
         super(Carrack.NAME, bearing, pos);

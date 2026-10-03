@@ -6,7 +6,10 @@ package iscteiul.ista.battleship;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
+/**
+ * This abstract class is used to represent ships.
+ * 
+ */
 public abstract class Ship implements IShip {
 
     private static final String GALEAO = "galeao";
@@ -173,10 +176,10 @@ public abstract class Ship implements IShip {
         return right;
     }
 
-    /*
-     * (non-Javadoc)
+    /**
+     * Checks if the position belongs to the ship.
      *
-     * @see battleship.IShip#occupies(battleship.IPosition)
+     * @param pos
      */
     @Override
     public boolean occupies(IPosition pos) {
@@ -188,10 +191,12 @@ public abstract class Ship implements IShip {
         return false;
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see battleship.IShip#tooCloseTo(battleship.IShip)
+    /**
+     * It checks if the ship is close or not.
+     * It checks each position of the ship other using tooCloseTo(IShip other), and if one gives true than the ship is also tooCloseTo.
+     * 
+     * @param other ship to check
+     * @see Ship#tooCloseTo(IPosition)
      */
     @Override
     public boolean tooCloseTo(IShip other) {
@@ -205,10 +210,10 @@ public abstract class Ship implements IShip {
         return false;
     }
 
-    /*
-     * (non-Javadoc)
-     *
-     * @see battleship.IShip#tooCloseTo(battleship.IPosition)
+    /**
+     * Verifies if a position is closed to the ship by checking if the position is adjacent to any position of the ship.
+     * 
+     * @param pos position to check
      */
     @Override
     public boolean tooCloseTo(IPosition pos) {
@@ -219,10 +224,9 @@ public abstract class Ship implements IShip {
     }
 
 
-    /*
-     * (non-Javadoc)
+    /**
+     * Method to shoot and register if the shot hit the ship o one of its positions. 
      *
-     * @see battleship.IShip#shoot(battleship.IPosition)
      */
     @Override
     public void shoot(IPosition pos) {
