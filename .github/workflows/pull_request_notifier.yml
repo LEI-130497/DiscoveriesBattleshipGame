@@ -2,8 +2,8 @@ name: Pull Request Notifier
 
 on:
   pull_request:
-    types:
-      - opened
+    types: [opened, ready_for_review]
+
 jobs:
   test:
     runs-on: ubuntu-latest  
