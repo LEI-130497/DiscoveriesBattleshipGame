@@ -1,0 +1,24 @@
+name: Pull Request Notifier
+
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  
+
+    strategy:
+      matrix: 
+        reviewer: ${{ github.event.pull_request.requested_reviewers }}
+
+    steps:
+      - name: Comment PR
+        run: gh pr comment ${{ github.event.pull_request.number }} --repo "${{ github.repository }}" --body "@${{ matrix.reviewer.login }} must review this pull request."
+        env:
+          GH_TOKEN: ${{ github.token }}

@@ -5,10 +5,11 @@ package iscteiul.ista.battleship;
 
 import java.util.Scanner;
 
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
+/**
+ * This class is used to access static tool functions.
+ */
 public class Tasks {
     private static final Logger LOGGER = LogManager.getLogger();
 
