@@ -1,6 +1,6 @@
 # Battleship
 
-Basic academic version of Battleship game to build upon.
+Basic academic version of Battleship (i edited here) game to build upon.
 
 # Group 8
 | Name        | Number | Course                  |
